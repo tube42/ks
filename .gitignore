@@ -1,0 +1,13 @@
+*~
+
+bin
+libs
+build
+
+.gradle
+
+.vscode
+
+.classpath
+.settings
+.project
