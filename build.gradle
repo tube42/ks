@@ -19,6 +19,9 @@ allprojects {
 	apply plugin: 'maven'
 	apply plugin: 'maven-publish'
 
+	targetCompatibility = '1.7'
+	sourceCompatibility = '1.7'
+
     dependencies {
 		testCompile 'junit:junit:4.12'
 	}
@@ -38,7 +41,7 @@ allprojects {
 }
 
 
-version = '0.3.0'
+version = '0.3.1'
 group = 'se.tube42.ks'
 
 publishing {
@@ -67,7 +70,7 @@ bintray {
 		name = 'ks'
         desc = 'ks library'
 		userOrg = user
-		licenses = ['LGPL-2.1']
+		licenses = ['LGPL-3.0']
         websiteUrl = 'https://github.com/tube42/ks'
         issueTrackerUrl = 'https://github.com/tube42/ks/issues'
 		vcsUrl = 'https://github.com/tube42/ks.git'
